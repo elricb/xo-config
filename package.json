@@ -1,0 +1,26 @@
+{
+  "name": "@elricb/xo-config",
+  "version": "0.0.1",
+  "description": "Shared xo config for my projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elricb/xo-config.git"
+  },
+  "author": "elricb (https://github.com/elricb)",
+  "main": ".xo-config.js",
+  "files": [
+    ".xo-config.js"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "xo": "^0.44.0"
+  },
+  "bugs": {
+    "url": "https://github.com/elricb/xo-config/issues"
+  },
+  "homepage": "https://github.com/elricb/xo-config#readme",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
