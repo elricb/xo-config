@@ -16,6 +16,7 @@ module.exports = {
     "unicorn/no-for-loop": 0,
     "unicorn/no-hex-escape": 0,
     "unicorn/prefer-module": 0,
+    "unicorn/prefer-node-protocol": 0,
     "unicorn/prefer-spread": 0
   }
 };
