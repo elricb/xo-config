@@ -4,6 +4,8 @@ module.exports = {
   "extends": ["xo-react"],
   "plugins": ["react"],
   "rules": {
+    // i != 0 seems alright for string/int checking
+    "eqeqeq": 0,
     // in webpack no extension allows import of directory/index
     "import/extensions": 0,
     // checking equal/not-equal is valid logic
