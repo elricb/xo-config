@@ -36,6 +36,8 @@ module.exports = {
     "unicorn/no-for-loop": 0,
     // Hex and unicode are both valid logic interfaces
     "unicorn/no-hex-escape": 0,
+    // There are reasons to import then export; also "export from" isn't current LTS this rule wrongly assumes a transpiler.
+    "unicorn/prefer-export-from": 0,
     // __dirname/__filename are useful when used correctly in jobs (not everything is an app)
     "unicorn/prefer-module": 0,
     // This isn't available in current node lts version
