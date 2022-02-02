@@ -14,6 +14,8 @@ module.exports = {
     "node/file-extension-in-import": 0,
     // Doesn't make sense for CLI apps (e.g. verbose)
     "react/boolean-prop-naming": 1,
+    // It's more informative to display the value passed
+    "react/jsx-boolean-value": 0,
     // Template + curly encodes HTML characters properly {`% @`}; Rule should be to always use curly braces
     "react/jsx-curly-brace-presence": 0,
     // React recommends bind functions circumstantially; https://reactjs.org/docs/faq-functions.html#is-it-ok-to-use-arrow-functions-in-render-methods
