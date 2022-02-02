@@ -16,6 +16,8 @@ module.exports = {
     "react/boolean-prop-naming": 1,
     // Template + curly encodes HTML characters properly {`% @`}; Rule should be to always use curly braces
     "react/jsx-curly-brace-presence": 0,
+    // React recommends bind functions circumstantially; https://reactjs.org/docs/faq-functions.html#is-it-ok-to-use-arrow-functions-in-render-methods
+    "react/jsx-no-bind": 0,
     // JSX props in a specific order is beyond anal with no benefit
     "react/jsx-sort-props": 0,
     // Not always possible; don't always have control over 3rd party data
