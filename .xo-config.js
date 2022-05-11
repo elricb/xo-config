@@ -4,14 +4,20 @@ module.exports = {
   "extends": ["xo-react"],
   "plugins": ["react"],
   "rules": {
+    // Sometimes comments equal helpful greater-than standardized
+    "capitalized-comments": 1,
     // String + Int checking is standard practice; i != 0
     "eqeqeq": 0,
     // In webpack no extension allows import of directory/index
     "import/extensions": 0,
+    // Standard process for node env config - xo assumes browser only usage
+    "import/no-unassigned-import": 1,
     // Checking equal/not-equal is valid logic
     "no-negated-condition": 0,
     // In webpack no extension allows import of directory/index
     "node/file-extension-in-import": 0,
+    // For classes yes, for json/literals no
+    "object-shorthand": 0,
     // Doesn't make sense for CLI apps (e.g. verbose)
     "react/boolean-prop-naming": 1,
     // It's more informative to display the value passed
@@ -20,6 +26,8 @@ module.exports = {
     "react/jsx-curly-brace-presence": 0,
     // React recommends bind functions circumstantially; https://reactjs.org/docs/faq-functions.html#is-it-ok-to-use-arrow-functions-in-render-methods
     "react/jsx-no-bind": 0,
+    // If child is var/loop throws error if no fragment exists - linting shouldn't cause syntax errors
+    "react/jsx-no-useless-fragment": 0,
     // JSX props in a specific order is beyond anal with no benefit
     "react/jsx-sort-props": 0,
     // Not always possible; don't always have control over 3rd party data
@@ -34,12 +42,20 @@ module.exports = {
     "unicorn/explicit-length-check": 0,
     // I'm not 100% sold on this ATM
     "unicorn/filename-case": 1,
+    // Certain libraries import rules is super anal
+    "unicorn/import-style": 0,
+    // Standard practice in libraries
+    "unicorn/no-array-callback-reference": 0,
     // Reduce is a performant/powerful method
     "unicorn/no-array-reduce": 0,
     // For loops are valid code instructions; adopted from c
     "unicorn/no-for-loop": 0,
     // Hex and unicode are both valid logic interfaces
     "unicorn/no-hex-escape": 0,
+    // Using in CLI app, but throws lint error (xo bug?)
+    "unicorn/no-process-exit": 0,
+    // Consistency over whatever this is
+    "unicorn/no-zero-fractions": 0,
     // There are reasons to import then export; also "export from" isn't current LTS this rule wrongly assumes a transpiler.
     "unicorn/prefer-export-from": 0,
     // __dirname/__filename are useful when used correctly in jobs (not everything is an app)
