@@ -1,9 +1,9 @@
 module.exports = {
-  "space": true,
-  "prettier": true,
-  "extends": ["xo-react"],
-  "plugins": ["react"],
-  "rules": {
+  space: true,
+  prettier: true,
+  extends: ["xo-react"],
+  plugins: ["react"],
+  rules: {
     // Sometimes comments equal helpful greater-than standardized
     "capitalized-comments": 1,
     // String + Int checking is standard practice; i != 0
@@ -14,6 +14,8 @@ module.exports = {
     "import/no-anonymous-default-export": 0,
     // Standard process for node env config - xo assumes browser only usage
     "import/no-unassigned-import": 1,
+    // MDN suggested syncronous promises uses this method
+    "no-await-in-loop": 0,
     // Checking equal/not-equal is valid logic
     "no-negated-condition": 0,
     // In webpack no extension allows import of directory/index
@@ -40,6 +42,10 @@ module.exports = {
     "react/prop-types": 1,
     // Should be a warning
     "react-hooks/exhaustive-deps": 1,
+    // Don't know passthrough function return types
+    "@typescript-eslint/ban-types": 0,
+    // Arguments defaulting to optional empty function is a time saver
+    "@typescript-eslint/no-empty-function": 0,
     // Using loose typescript rules.  This is thrown for all Component.propTypes assignments.
     "@typescript-eslint/no-unsafe-assignment": 0,
     // Using loose typescript rules.  Trying to `String.split()` on `var s: string = ""` throws this error?
@@ -80,5 +86,5 @@ module.exports = {
     "unicorn/prefer-spread": 0,
     // It's preferable to carry standards through like stdio/stderr; reserved words circumvented with underscore is poor practice
     "unicorn/prevent-abbreviations": 1,
-  }
+  },
 };
