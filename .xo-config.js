@@ -38,6 +38,14 @@ module.exports = {
     "react/prop-types": 1,
     // Should be a warning
     "react-hooks/exhaustive-deps": 1,
+    // Using loose typescript rules.  This is thrown for all Component.propTypes assignments.
+    "@typescript-eslint/no-unsafe-assignment": 0,
+    // Using loose typescript rules.  Trying to `String.split()` on `var s: string = ""` throws this error?
+    "@typescript-eslint/no-unsafe-call": 0,
+    // Using loose typescript rules.  Need to investigate, `Component(): JSX.Element {` still throws this.  Why would `return </>;` still need to be defined?
+    "@typescript-eslint/no-unsafe-return": 0,
+    // ContestRule: So even if a variable is defined as a number, you can't add +1 to it?
+    "@typescript-eslint/restrict-plus-operands": 0,
     // Greater/less-then are valid length checks
     "unicorn/explicit-length-check": 0,
     // I'm not 100% sold on this ATM
