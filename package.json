@@ -13,14 +13,17 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "jest": "^28.1.3",
     "xo": "^0.44.0"
+  },
+  "dependencies": {
+    "eslint-config-xo-react": "^0.27.0"
   },
   "bugs": {
     "url": "https://github.com/elricb/xo-config/issues"
   },
   "homepage": "https://github.com/elricb/xo-config#readme",
-  "dependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   }
 }
