@@ -46,8 +46,10 @@ module.exports = {
     "@typescript-eslint/no-unsafe-call": 0,
     // Using loose typescript rules.  Need to investigate, `Component(): JSX.Element {` still throws this.  Why would `return </>;` still need to be defined?
     "@typescript-eslint/no-unsafe-return": 0,
+    // for loop is more performant and matches c language syntax
+    "@typescript-eslint/prefer-for-of": 0,
     // Bloat overkill; also breaks certain environments
-    "@typescript-eslint/promise-function-async"
+    "@typescript-eslint/promise-function-async": 0,
     // ContestRule: So even if a variable is defined as a number, you can't add +1 to it?
     "@typescript-eslint/restrict-plus-operands": 0,
     // Greater/less-then are valid length checks
