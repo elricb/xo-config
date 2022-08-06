@@ -10,6 +10,8 @@ module.exports = {
     "eqeqeq": 0,
     // In webpack no extension allows import of directory/index
     "import/extensions": 0,
+    // Avoid code bloat; allow: export default function
+    "import/no-anonymous-default-export": 0,
     // Standard process for node env config - xo assumes browser only usage
     "import/no-unassigned-import": 1,
     // Checking equal/not-equal is valid logic
