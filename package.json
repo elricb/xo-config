@@ -1,6 +1,6 @@
 {
   "name": "@elricb/xo-config",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Shared xo config for my projects",
   "repository": {
     "type": "git",
