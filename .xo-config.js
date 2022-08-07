@@ -42,10 +42,14 @@ module.exports = {
     "react/prop-types": 1,
     // Should be a warning
     "react-hooks/exhaustive-deps": 1,
+    // I don't care record vs indexed-signature; typesript should be more consistant
+    "@typescript-eslint/consistent-indexed-object-style": 0,
     // Don't know passthrough function return types
     "@typescript-eslint/ban-types": 0,
     // Arguments defaulting to optional empty function is a time saver
     "@typescript-eslint/no-empty-function": 0,
+    // typescript default rule conflicts with this default xo rule; typescript wins
+    "@typescript-eslint/no-inferrable-types": 0,
     // Using loose typescript rules.  This is thrown for all Component.propTypes assignments.
     "@typescript-eslint/no-unsafe-assignment": 0,
     // Using loose typescript rules.  Trying to `String.split()` on `var s: string = ""` throws this error?
