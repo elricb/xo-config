@@ -62,6 +62,8 @@ module.exports = {
     "@typescript-eslint/promise-function-async": 0,
     // ContestRule: So even if a variable is defined as a number, you can't add +1 to it?
     "@typescript-eslint/restrict-plus-operands": 0,
+    // String contents shouldn't be a rule
+    "@typescript-eslint/restrict-template-expressions": 0,
     // Greater/less-then are valid length checks
     "unicorn/explicit-length-check": 0,
     // I'm not 100% sold on this ATM
