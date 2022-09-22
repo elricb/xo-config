@@ -99,7 +99,7 @@ module.exports = function (plugins = []) {
       // Don't know passthrough function return types
       "@typescript-eslint/ban-types": 0,
       // Checks inside strings and templates and tries to correct contents
-      "@typescript-eslint/naming-convention": 1,
+      // "@typescript-eslint/naming-convention": 1,
       // Arguments defaulting to optional empty function is a time saver
       "@typescript-eslint/no-empty-function": 0,
       // typescript default rule conflicts with this default xo rule; typescript wins
