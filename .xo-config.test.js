@@ -5,5 +5,5 @@ test(".xo-config.js exists", () => {
 });
 
 test(".xo-config.js exports", () => {
-  expect(typeof require("./.xo-config.js")).toBe("object");
+  expect(typeof require("./.xo-config.js")).toBe("function");
 });
