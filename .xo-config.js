@@ -1,8 +1,6 @@
 module.exports = {
   space: true,
   prettier: true,
-  extends: ["xo-react"],
-  plugins: ["react"],
   rules: {
     // Sometimes comments equal helpful greater-than standardized
     "capitalized-comments": 1,
@@ -86,6 +84,8 @@ module.exports = {
     "unicorn/no-zero-fractions": 0,
     // There are reasons to import then export; also "export from" isn't current LTS this rule wrongly assumes a transpiler.
     "unicorn/prefer-export-from": 0,
+    // indexOf/includes are both relevant searches
+    "unicorn/prefer-includes": 1,
     // __dirname/__filename are useful when used correctly in jobs (not everything is an app)
     "unicorn/prefer-module": 0,
     // This isn't available in current node lts version
