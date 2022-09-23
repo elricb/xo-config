@@ -38,3 +38,11 @@ module.exports = require("@elric/xo-config")(["react"]);
 module.exports = require("@elric/xo-config")(["typescript"]);
 ```
 
+## Documentation
+
+### Release Notes
+
+View commit tag for release notes.
+
+* [release list](https://github.com/elricb/xo-config/tags)
+
