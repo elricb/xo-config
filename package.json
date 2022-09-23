@@ -2,25 +2,26 @@
   "name": "@elricb/xo-config",
   "version": "0.1.2",
   "description": "Shared xo config for my projects",
+  "license": "MIT",
+  "author": "elricb (https://github.com/elricb)",
+  "homepage": "https://github.com/elricb/xo-config#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elricb/xo-config.git"
   },
-  "author": "elricb (https://github.com/elricb)",
+  "bugs": {
+    "url": "https://github.com/elricb/xo-config/issues"
+  },
+  "source": ".xo-config.js",
   "main": ".xo-config.js",
   "files": [
     ".xo-config.js"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/elricb/xo-config/issues"
-  },
-  "homepage": "https://github.com/elricb/xo-config#readme",
   "scripts": {
     "test": "jest"
   },
   "devDependencies": {
-    "jest": "^28.1.3"
+    "jest": "^29.0.3"
   },
   "peerDependancies": {
     "xo": "^0.52.3"
