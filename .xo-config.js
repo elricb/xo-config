@@ -118,6 +118,25 @@ module.exports = function (plugins = []) {
       "@typescript-eslint/restrict-plus-operands": 0,
       // String contents shouldn't be a rule
       "@typescript-eslint/restrict-template-expressions": 0,
+      // Rediculous rule that forces Object keys to only be camel case
+      // Causes problems with things like HTTP headers or find/replace
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "selector": [
+            "classProperty",
+            "objectLiteralProperty",
+            "typeProperty",
+            "classMethod",
+            "objectLiteralMethod",
+            "typeMethod",
+            "accessor",
+            "enumMember"
+          ],
+          "format": null,
+          "modifiers": ["requiresQuotes"]
+        }
+      ],
     };
   }
 
