@@ -38,6 +38,16 @@ module.exports = require("@elric/xo-config")(["react"]);
 module.exports = require("@elric/xo-config")(["typescript"]);
 ```
 
+
+## Notes
+
+Mixed typescript and javascript projects will throw errors like below.  It's recommended to ignore js files in the `.eslintignore` files.
+
+```
+Definition for rule @typescript-eslint/naming-convention was not found.  @typescript-eslint/naming-convention
+```
+
+
 ## Documentation
 
 ### Release Notes
