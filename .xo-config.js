@@ -139,6 +139,8 @@ module.exports = function (plugins = []) {
       ],
     // ContestRule: charAt(0) is fine for one character.  Faster and easier to understand.
     "@typescript-eslint/prefer-string-starts-ends-with": 0,
+    // I like this rule, but current node.js LTS doesn't support optional chaining without task runner (pause implementation for now)
+    "@typescript-eslint/prefer-optional-chain": 1,
     };
   }
 
