@@ -18,7 +18,8 @@
     ".xo-config.js"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "do-publish": "npm test"
   },
   "devDependencies": {
     "jest": "^29.0.3"

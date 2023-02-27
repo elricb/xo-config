@@ -137,6 +137,8 @@ module.exports = function (plugins = []) {
           "modifiers": ["requiresQuotes"]
         }
       ],
+    // ContestRule: charAt(0) is fine for one character.  Faster and easier to understand.
+    "@typescript-eslint/prefer-string-starts-ends-with": 0,
     };
   }
 
