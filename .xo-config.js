@@ -53,6 +53,8 @@ module.exports = function (plugins = []) {
       "unicorn/prefer-string-slice": 0,
       // It's preferable to carry standards through like stdio/stderr; reserved words circumvented with underscore is poor practice
       "unicorn/prevent-abbreviations": 1,
+      // Ignore case bloat: case X: {}
+      "unicorn/switch-case-braces": 0,
     },
   };
 
