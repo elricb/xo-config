@@ -19,6 +19,8 @@ module.exports = function (plugins = []) {
       "no-negated-condition": 0,
       // For classes yes, for json/literals no
       "object-shorthand": 0,
+      // Disagree: with new RegExp you can add dynamic fields; literals can not.  Use always for consistency.
+      "prefer-regex-literals": 0,
       // Greater/less-then are valid length checks
       "unicorn/explicit-length-check": 0,
       // I'm not 100% sold on this ATM
@@ -47,6 +49,8 @@ module.exports = function (plugins = []) {
       "unicorn/prefer-node-protocol": 0,
       // Spread everything isn't performant
       "unicorn/prefer-spread": 0,
+      // Slice vs substring.  I dislike slice because it indicates it alters the original string even though it doesn't.
+      "unicorn/prefer-string-slice": 0,
       // It's preferable to carry standards through like stdio/stderr; reserved words circumvented with underscore is poor practice
       "unicorn/prevent-abbreviations": 1,
     },
