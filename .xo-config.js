@@ -29,6 +29,8 @@ module.exports = function (plugins = []) {
       "unicorn/import-style": 0,
       // Standard practice in libraries
       "unicorn/no-array-callback-reference": 0,
+      // For ES5 compatible libraries, can't alway use "for/of".
+      "unicorn/no-array-for-each": 1,
       // Reduce is a performant/powerful method
       "unicorn/no-array-reduce": 0,
       // For loops are valid code instructions; adopted from c
