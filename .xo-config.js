@@ -23,6 +23,9 @@ module.exports = function (plugins = []) {
       "object-shorthand": 0,
       // Disagree: with new RegExp you can add dynamic fields; literals can not.  Use always for consistency.
       "prefer-regex-literals": 0,
+      // typescript throws an error if you use spread for args `test(...args)`; hence using apply to work around it `test.apply(null, args)`.
+      // But getting this lint error that works in the reverse.
+      "prefer-spread": 1,
       // Greater/less-then are valid length checks
       "unicorn/explicit-length-check": 0,
       // I'm not 100% sold on this ATM
