@@ -14,13 +14,11 @@ module.exports = function (plugins = []) {
       // Standard process for node env config - xo assumes browser only usage
       "import/no-unassigned-import": 1,
       // packages that use exports warn about extensions
-      "n/file-extension": 1,
+      "n/file-extension-in-import": 1,
       // MDN suggested syncronous promises uses this method
       "no-await-in-loop": 0,
       // Checking equal/not-equal is valid logic
       "no-negated-condition": 0,
-      // packages that use exports warn about extensions
-      "node/file-extension-in-import": 1,
       // For classes yes, for json/literals no
       "object-shorthand": 0,
       // Disagree: with new RegExp you can add dynamic fields; literals can not.  Use always for consistency.
