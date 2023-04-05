@@ -107,6 +107,9 @@ module.exports = function (plugins = []) {
   if (plugins.includes("typescript")) {
     config.rules = {
       ...config.rules,
+      // Perpetual lint loop.  If you fix interface/extends with intersection,
+      // "@typescript-eslint/no-redundant-type-constituents" will be thrown.
+      "@typescript-eslint/consistent-type-definitions": 1,
       // I don't care record vs indexed-signature; typesript should be more consistant
       "@typescript-eslint/consistent-indexed-object-style": 0,
       // Don't know passthrough function return types
