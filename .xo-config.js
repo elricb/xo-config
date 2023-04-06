@@ -5,6 +5,8 @@ module.exports = function (plugins = []) {
     rules: {
       // Sometimes comments equal helpful greater-than standardized
       "capitalized-comments": 1,
+      // Switch does not always have a default case.
+      "default-case": 0,
       // String + Int checking is standard practice; i != 0
       "eqeqeq": 0,
       // In webpack no extension allows import of directory/index
