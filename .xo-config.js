@@ -21,6 +21,8 @@ module.exports = function (plugins = []) {
       "no-negated-condition": 0,
       // For classes yes, for json/literals no
       "object-shorthand": 0,
+      // Object.assign is more performant and in circumstances speed is more important.
+      "prefer-object-spread": 1,
       // Disagree: with new RegExp you can add dynamic fields; literals can not.  Use always for consistency.
       "prefer-regex-literals": 0,
       // typescript throws an error if you use spread for args `test(...args)`; hence using apply to work around it `test.apply(null, args)`.
